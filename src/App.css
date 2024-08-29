@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  margin: auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+}
+
+.product-list {
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.product-image {
+  background-color: #f3f3f3;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.product-image p {
+  color: #999;
+}
+
+button {
+  background-color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.cart-info {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.cart-info h2 {
+  margin-top: 0;
+}
+
+.cart-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-info li {
+  background-color: #444;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-info li button {
+  background-color: #e74c3c;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.cart-info li button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .App-header {
+    padding: 15px;
+  }
+
+  .cart-info {
+    width: 220px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-list {
+    margin-right: 0;
+  }
+
+  .product-card {
+    max-width: 90%;
+  }
+
+  .cart-info {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: none;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-card {
+    padding: 15px;
+  }
+
+  .cart-info {
+    padding: 15px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
